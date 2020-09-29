@@ -1,0 +1,24 @@
+{
+  "name": "smplygd/sg-replacement",
+  "type": "typo3-cms-extension",
+  "version": "0.0.1",
+  "description": "Extension Replaces Placeholder with values",
+  "authors": [
+    {
+      "name": "Daniel Hoffmann",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": "^10.4.0"
+  },
+  "replace":{
+    "sg_replacement": "self.version",
+    "typo3-ter/sg-replacement": "self.version"
+  },
+  "autoload":{
+    "psr-4":{
+      "SG\\SgReplacement\\": "Classes/"
+    }
+  }
+}
