@@ -1,7 +1,7 @@
 {
   "name": "smplygd/sg-replacement",
   "type": "typo3-cms-extension",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Extension Replaces Placeholder with values",
   "license": "GPL-2.0-or-later",
   "authors": [
