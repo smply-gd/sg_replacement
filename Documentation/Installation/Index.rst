@@ -1,9 +1,16 @@
 .. include:: ../Includes.txt
-
 .. _installation:
 
 ============
 Installation
 ============
 
-Installation with Extensionmanager, once it is activated it can be used.
+Extensionmanager
+================
+
+Install & Activate in Extensionmanager it can be used.
+
+Composer-Based
+==============
+
+composer require smplygd/sg-replacement
