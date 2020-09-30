@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2016-03-17T15:20:11Z" product-name="sg_replacement">
+        <header/>
+        <body>
+            <trans-unit id="mlang_tabs_tab">
+                <source>Replacement</source>
+            </trans-unit>
+            <trans-unit id="mlang_labels_tabdescr">
+                <source>Replacement</source>
+            </trans-unit>
+            <trans-unit id="allitems">
+                <source>All Items</source>
+            </trans-unit>
+            <trans-unit id="foractivepage">
+                <source>For active Page</source>
+            </trans-unit>
+            <trans-unit id="usedforpageinfrontend">
+                <source>Used for page in frontend</source>
+            </trans-unit>
+            <trans-unit id="infoActivePage">
+                <source>Only these Items are shown which are used for replacement in Frontend on the selected page.</source>
+            </trans-unit>
+            <trans-unit id="searchFor">
+                <source>Search For</source>
+            </trans-unit>
+            <trans-unit id="replaceWith">
+                <source>Replace With</source>
+            </trans-unit>
+            <trans-unit id="isRegEx">
+                <source>is RegEx</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  SG\SgReplacement\:
+    resource: '../Classes/*'
+
+  SG\SgReplacement\Hooks\TypoScriptFrontendController:
+    public: true
+  SG\SgReplacement\Domain\Repository\ItemRepository:
+    public: true
