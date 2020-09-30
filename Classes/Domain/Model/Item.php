@@ -98,7 +98,7 @@ class Item extends AbstractEntity
     /**
      * @return bool
      */
-    public function isRegEx(): bool
+    public function getIsRegEx(): bool
     {
         return $this->isRegEx;
     }

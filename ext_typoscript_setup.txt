@@ -1,0 +1,7 @@
+module.tx_sgreplacement {
+    view {
+        templateRootPaths.0 = EXT:sg_replacement/Resources/Private/Backend/Templates/
+        partialRootPaths.0 = EXT:sg_replacement/Resources/Private/Backend/Partials/
+        layoutRootPaths.0 = EXT:sg_replacement/Resources/Private/Backend/Layouts/
+    }
+}

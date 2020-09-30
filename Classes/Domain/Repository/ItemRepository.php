@@ -14,9 +14,19 @@ class ItemRepository extends Repository
      * @param $pidsToEvaluate
      * @return array
      */
-    public function getAllItemsFromRootline($pidsToEvaluate){
+    public function getAllItemsFromRootline($pageUid){
         $query = $this->createQuery();
         $result = [];
+
+        $rootLineUtility = new \TYPO3\CMS\Core\Utility\RootlineUtility($pageUid);
+        $rootline = $rootLineUtility->get();
+        $i = 1;
+        $pidsToEvaluate = [];
+        foreach ($rootline as $page){
+            if ($i == 1) $pidsToEvaluate[] = $page['uid'];
+            $pidsToEvaluate[] = $page['pid'];
+            $i++;
+        }
 
         foreach ($pidsToEvaluate as $pid){
             $query->getQuerySettings()->setStoragePageIds([$pid]);
@@ -29,4 +39,12 @@ class ItemRepository extends Repository
         }
         return $result;
     }
+
+    public function findAllOnAllPagesWithHiddenFields()
+    {
+        $query = $this->createQuery();
+        $query->getQuerySettings()->setIgnoreEnableFields(true)->setEnableFieldsToBeIgnored(['hidden'])->setRespectStoragePage(false);
+        return $query->execute();
+    }
+
 }

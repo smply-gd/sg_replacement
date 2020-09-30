@@ -45,18 +45,9 @@ class TypoScriptFrontendController
         array &$params,
         \TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController $frontendController
     ){
-        // Get PIDs in Rootline
-        $i = 1;
-        $pidsToEvaluate = [];
-        foreach ($frontendController->rootLine as $page){
-            if ($i == 1) $pidsToEvaluate[] = $page['uid'];
-            $pidsToEvaluate[] = $page['pid'];
-            $i++;
-        }
-
         $objectManager = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Extbase\Object\ObjectManager::class);
         $itemRepository = $objectManager->get(\SG\SgReplacement\Domain\Repository\ItemRepository::class);
-        $itemsToApply = $itemRepository->getAllItemsFromRootline($pidsToEvaluate);
+        $itemsToApply = $itemRepository->getAllItemsFromRootline($frontendController->id);
         if (count($itemsToApply) > 0){
             foreach ($itemsToApply as $itemToApply){
                 if ($itemToApply instanceof Item && $itemToApply->getSearchFor() !== ''){

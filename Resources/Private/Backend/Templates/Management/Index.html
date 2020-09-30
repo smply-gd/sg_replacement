@@ -1,0 +1,44 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers" xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="content">
+    <div class="container">
+        <f:flashMessages />
+        <h1 class="headline-with-icon">
+            <f:image class="headline-icon" src="EXT:sg_replacement/ext_icon.png" width="32"/>
+            <span>smply.gd Replacement</span>
+        </h1>
+        <f:render partial="Navigation" arguments="{_all}"/>
+        <p><f:translate key="LLL:EXT:sg_replacement/Resources/Private/Language/locallang_mod.xlf:infoActivePage" /></p>
+        <f:if condition="{items}">
+            <table class="js-sg-estate-core-be-realty-table table">
+                <thead>
+                <th>UID</th>
+                <th>PID</th>
+                <th><f:translate key="LLL:EXT:sg_replacement/Resources/Private/Language/locallang_mod.xlf:searchFor" /></th>
+                <th><f:translate key="LLL:EXT:sg_replacement/Resources/Private/Language/locallang_mod.xlf:replaceWith" /></th>
+                <th><f:translate key="LLL:EXT:sg_replacement/Resources/Private/Language/locallang_mod.xlf:isRegEx" /></th>
+                <th></th>
+                </thead>
+                <tbody>
+                <f:for each="{items}" as="item">
+                    <tr>
+                        <td>{item.uid}</td>
+                        <td>{item.pid}</td>
+                        <td>{item.searchFor}</td>
+                        <td>{item.replaceWith}</td>
+                        <td>
+                            {item.isRegEx}
+                        </td>
+                        <td>
+                            <be:link.editRecord uid="{item.uid}" table="tx_sgreplacement_domain_model_item">
+                                <i class="fa fa-2x fa-edit"></i>
+                            </be:link.editRecord>
+                        </td>
+                    </tr>
+                </f:for>
+                </tbody>
+            </table>
+        </f:if>
+    </div>
+</f:section>
+</html>
