@@ -12,5 +12,8 @@ First Working Version
 
 Version 1.0.1
 -------------
-
 Adds README file
+
+Version 1.0.2
+-------------
+Adds Composer hint to Documenation
