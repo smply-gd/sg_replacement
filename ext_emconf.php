@@ -17,7 +17,7 @@ $EM_CONF[$_EXTKEY] = [
         ],
     ],
     'state' => 'beta',
-    'version' => '1.0.2',
+    'version' => '1.0.3',
     'author' => 'Daniel Hoffmann',
     'author_email' => 'hoffmann@smply.gd',
     'author_company' => 'smply.gd GmbH',
