@@ -17,3 +17,7 @@ Adds README file
 Version 1.0.2
 -------------
 Adds Composer hint to Documenation
+
+Version 1.0.3
+-------------
+Fixes Hook
