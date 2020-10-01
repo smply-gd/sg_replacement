@@ -104,6 +104,14 @@ class Item extends AbstractEntity
     }
 
     /**
+     * @return bool
+     */
+    public function isRegEx(): bool
+    {
+        return $this->isRegEx;
+    }
+
+    /**
      * @param bool $isRegEx
      */
     public function setIsRegEx(bool $isRegEx): void
