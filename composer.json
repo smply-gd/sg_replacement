@@ -1,7 +1,7 @@
 {
   "name": "sg/sg-replacement",
   "type": "typo3-cms-extension",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Extension Replaces Placeholder with values",
   "license": "GPL-2.0-or-later",
   "authors": [
@@ -19,7 +19,7 @@
     }
   },
   "replace":{
-    "sg_replacement": "self.version",
+    "sg/sg-replacement": "self.version",
     "typo3-ter/sg-replacement": "self.version"
   },
   "autoload": {
