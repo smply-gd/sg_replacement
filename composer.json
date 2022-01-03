@@ -1,7 +1,7 @@
 {
-  "name": "smplygd/sg-replacement",
+  "name": "sg/sg-replacement",
   "type": "typo3-cms-extension",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Extension Replaces Placeholder with values",
   "license": "GPL-2.0-or-later",
   "authors": [
@@ -22,8 +22,8 @@
     "sg_replacement": "self.version",
     "typo3-ter/sg-replacement": "self.version"
   },
-  "autoload":{
-    "psr-4":{
+  "autoload": {
+    "psr-4": {
       "SG\\SgReplacement\\": "Classes/"
     }
   }
