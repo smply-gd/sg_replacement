@@ -13,4 +13,4 @@ Install & Activate in Extensionmanager it can be used.
 Composer-Based
 ==============
 
-composer require smplygd/sg-replacement
+composer require sg/sg-replacement
