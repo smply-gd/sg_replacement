@@ -19,7 +19,7 @@
     }
   },
   "replace":{
-    "sg_replacement": "self.version",
+    "sg/sg-replacement": "self.version",
     "typo3-ter/sg-replacement": "self.version"
   },
   "autoload": {
